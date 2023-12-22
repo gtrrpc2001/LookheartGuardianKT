@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">LOOKHEART GUARDIAN</string>
+
+    <!--    Login Activity    -->
+    <string name="title_activity_login">LOOKHEART</string>
+    <string name="titleText">LOOKHEART</string>
+    <string name="loginLabel">Log in</string>
+    <string name="loginText">This is the LOOKHEART app for guardians. \nPlease enter your user ID and password.</string>
+    <string name="email_Label">E-mail</string>
+    <string name="email_Hint">Please enter your email</string>
+    <string name="password_Label">Password</string>
+    <string name="password_Hint">Please enter a password</string>
+    <string name="guardian_Label">Guardian phone number(excluding \'-\')</string>
+    <string name="guardian_Hint">Enter your phone number</string>
+    <string name="autoLogin">Auto-Login</string>
+    <string name="findEmailPassword">Find ID/PW</string>
+    <string name="signupHelpText">Is this your first time using LOOKHEART?</string>
+    <string name="signupButton">Sign up</string>
+    <string name="title_activity_signup_first">activity_signup_first</string>
+    <string name="lignAlert">Please enter the user information and guardian\'s number.</string>
+    <string name="loginFailed">Login Failed</string>
+    <string name="incorrectlyLogin">You entered your email or password incorrectly</string>
+    <string name="ok">OK</string>
+    <string name="serverErr">The server failed to verify the data.</string>
+    <string name="loginSuccess">Login Success!</string>
+
+    <!--    SignUp first    -->
+    <string name="signup1">Sign up 1/4</string>
+    <string name="agree">Agree</string>
+    <string name="back">Go back</string>
+    <string name="next">Next</string>
+
+    <!--    SignUp Second    -->
+    <string name="signup2">Sign up 2/4</string>
+
+    <!--    SignUp third    -->x
+    <string name="signup3">Sign up 3/4</string>
+    <string name="id_Label">Enter ID(E-mail)</string>
+    <string name="pw_Label">Enter Password</string>
+    <string name="rpw_Label">Re-enter password</string>
+    <string name="emailHelp">Please enter a valid email</string>
+    <string name="passwordHelp">Password of at least 10 characters including uppercase letters, lowercase letters, numbers, and special characters</string>
+    <string name="reEnterPasswordHelp">Passwords do not match</string>
+
+    <!--    SignUp fourth    -->
+    <string name="signup4">Sign up 4/4</string>
+    <string name="name_Label">Name</string>
+    <string name="height_Label">Height (cm)</string>
+    <string name="weight_Label">Weight (kg)</string>
+    <string name="male_Label">Male</string>
+    <string name="birthday_Label">Birth Date</string>
+    <string name="female_Label">Female</string>
+    <string name="signup_complete">Sign up completed</string>
+    <string name="nameHelp">Please enter the correct name</string>
+    <string name="heightHelp">Please enter correct height</string>
+    <string name="weightHelp">Please enter your correct weight</string>
+
+    <!--    Home    -->
+    <string name="rest">R</string>
+    <string name="exercise">A</string>
+    <string name="sleep">S</string>
+    <string name="arr">I.H.R.</string>
+
+    <string name="eCal">Activity calories</string>
+    <string name="eCalValue">0 kcal</string>
+    <string name="kcalValue">kcal</string>
+
+    <string name="step">Steps</string>
+    <string name="stepValue">0 step</string>
+    <string name="stepValue2">step</string>
+
+    <string name="temperature">Skin temp</string>
+    <string name="temperatureValue">- °C</string>
+    <string name="temperatureValue2">°C</string>
+
+    <string name="distance">Distance</string>
+    <string name="distanceM">Distance (m)</string>
+    <string name="distanceValue">0.000 km</string>
+    <string name="distanceValue3">0 km</string>
+    <string name="distanceValue2">km</string>
+    <string name="distanceM2">m</string>
+
+    <string name="yesterdayArr">than yesterday</string>
+    <string name="moreArr">more</string>
+    <string name="lessArr">less</string>
+    <string name="happenedArr"> Happened</string>
+
+    <string name="arrStatusGood">GOOD</string>
+    <string name="arrStatusCaution">CAUT</string>
+    <string name="arrStatusWarning">WARN</string>
+
+    <string name="time">time</string>
+    <string name="loadUserData">Receiving user data.</string>
+    <string name="failLoadUserData">Failed to receive user data.</string>
+
+    <string name="sucBpmData">BPM data has been received.</string>
+    <string name="failBpmData">BPM data was not received.</string>
+
+    <string name="sucDailyData">Daily data has been received.</string>
+    <string name="failDailyData">Daily data was not received.</string>
+
+    <string name="sucArrData">I.H.R. data has been received.</string>
+    <string name="failArrData">I.H.R. data was not received.</string>
+
+    <string name="noti">Notification</string>
+
+
+    <!--    summary    -->
+    <string name="summaryBpm">Bpm</string>
+    <string name="summaryArr">I.H.R.</string>
+    <string name="summaryCal">Calorie</string>
+    <string name="summaryStep">Step</string>
+    <string name="summaryHRV">HRV</string>
+
+    <string name="today">Today</string>
+    <string name="twoDays">2 Days</string>
+    <string name="threeDays">3 Days</string>
+
+    <string name="home_maxBpm">Max</string>
+    <string name="home_minBpm">Min</string>
+    <string name="home_avgBpm">Avg</string>
+    <string name="home_hrv">HRV</string>
+    <string name="home_hrv_unit">ms</string>
+
+    <!--    summaryArr    -->
+    <string name="arrTimes">I.H.R.\n(times/Day)</string>
+
+    <!--    summaryCal    -->
+    <string name="summaryTCal">Total calories (kcal)</string>
+    <string name="summaryECal">Activity calories (kcal)</string>
+    <string name="tCalTitle">Total calories</string>
+    <string name="eCalTitle">Activity calories</string>
+
+
+    <!--    summaryHRV    -->
+    <string name="avgHRV">Average</string>
+
+    <!--    summaryBPM    -->
+    <string name="avgBPM">Average</string>
+
+    <!--    ArrFragment    -->
+    <string name="arrState">Status :</string>
+    <string name="arrType">Type :</string>
+
+    <string name="typeArr">I.H.R.</string>
+    <string name="typeFastArr">Fast heart rhythm</string>
+    <string name="typeSlowArr">Slow heart rhythm</string>
+    <string name="typeHeavyArr">Heavy I.H.R.</string>
+
+    <!--    guardian    -->
+    <string name="setGuardianComp">Finish setting up guardians</string>
+    <string name="setGuardianFail">Failed to set up a guardian\nPlease try again</string>
+    <string name="setupGuardian">Set up guardians</string>
+    <string name="setupGuardianTxt">Please enter your cell phone number correctly</string>
+
+    <!--    Fragment    -->
+    <string name="fragment_day">Day</string>
+    <string name="fragment_week">Week</string>
+    <string name="fragment_month">Month</string>
+    <string name="fragment_year">Year</string>
+
+    <string name="fragment_bpm">BPM</string>
+    <string name="fragment_hrv">ms</string>
+
+    <!--    HOME Fragment    -->
+    <string name="exit">Exit?</string>
+    <string name="exit2">Exit</string>
+    <string name="homeECal">Activity cal</string>
+
+    <!--    ProfileFragment    -->
+    <string name="logout">LOGOUT</string>
+    <string name="logoutHelp">Do you want to log out?</string>
+    <string name="rejectLogout">Cancel</string>
+    <string name="sir">" "</string>
+    <string name="basic">Profile</string>
+    <string name="target">Target</string>
+    <string name="setting">Setting</string>
+    <string name="joinDate">Join Date</string>
+    <string name="saveData">Saved</string>
+
+    <string name="profile_HelpInfo1">All personal information</string>
+    <string name="profile_HelpInfo2">you enter is encrypted and safely managed.</string>
+    <string name="profile_HelpInfo3">In the event of an emergency in the Lookheart app,</string>
+    <string name="profile_HelpInfo4">a text message will be sent to the guardian\'s saved phone number.</string>
+    <string name="profile_save">Save</string>
+
+    <!--    NOTIFICATION    -->
+    <string name="notiTypeArr">I.H.R. detected!\n</string>
+    <string name="notiTypeFastArr">Fast heart rhythm detected!\n</string>
+    <string name="notiTypeSlowArr">Slow heart rhythm detected!\n</string>
+    <string name="notiTypeHeavyArr">Heavy I.H.R. detected!\n</string>
+
+    <string name="notiTypeMyo">Myo-activity detected!\n</string>
+    <string name="notiTypeNonContact">Electrode detached detected!\n</string>
+
+    <string name="arrCnt50">I.H.R. occurred 50 times today!</string>
+    <string name="arrCnt50Text">Please check the user\'s condition.</string>
+
+    <string name="arrCnt100">I.H.R. occurred 100 times today!</string>
+    <string name="arrCnt100Text">Suggest the user take a rest.</string>
+
+    <string name="arrCnt200">I.H.R. occurred 200 times today!</string>
+    <string name="arrCnt200Text">Consider consulting with a medical staff</string>
+
+    <string name="arrCnt300">I.H.R. occurred 300 times today!</string>
+    <string name="arrCnt300Text">Consider consulting with a medical staff</string>
+
+    <string name="notiTime">Time : </string>
+
+    <string name="notiHourlyArr10">Attention: 10 I.H.R. detected!</string>
+    <string name="notiHourlyArr10Text">Check for stress or fatigue.</string>
+
+    <string name="notiHourlyArr20">Warning: 20 I.H.R. detected</string>
+    <string name="notiHourlyArr20Text">Check for persistent fatigue or other symptoms.</string>
+
+    <string name="notiHourlyArr30">Emergency: 30 I.H.R. detected!</string>
+    <string name="notiHourlyArr30Text">Consider consulting a medical staff.</string>
+
+    <string name="notiHourlyArr50">Danger: 50 I.H.R. detected!</string>
+    <string name="notiHourlyArr50Text">Consider consulting a medical staff</string>
+
+    <!--    emergency    -->
+    <string name="emergency">Emergency</string>
+    <string name="occurrenceTime">"Occurrence Time: "</string>
+    <string name="occurrenceLocation">"Occurrence Location: "</string>
+
+    <!--    battery    -->
+    <string name="setBatTitle">Requires disabling battery optimisation</string>
+    <string name="setBatMessage">This app requires battery optimisation to be disabled for normal operation.\nTap \'OK\' to continue.</string>
+
+    <!--    Foreground Service    -->
+    <string name="serviceRunning">Running</string>
+
+    <!--    Permission    -->
+    <string name="permissionToast">Not allowing all permissions\nSome features are limited</string>
+    <string name="goToSettings">Go to Settings</string>
+
+
+
+    <!--    Day of the week    -->
+    <string name="Monday">MON</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+
+    <!--    bottom menu    -->
+    <string name="bottomHome">home</string>
+    <string name="bottomSummary">Summary</string>
+    <string name="bottomArr">IHR</string>
+    <string name="bottomProfile">Profile</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.LookHeart" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.LookHeart" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.LookHeart" />
+
+    <style name="AppTheme.Fullscreen" parent="Theme.LookHeart">
+        <item name="android:actionBarStyle">@style/Widget.AppTheme.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.BTMonSpO2.FullscreenContainer" parent="Theme.LookHeart">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+
+    <style name="Theme.LookHeart.Fullscreen" parent="Theme.LookHeart">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

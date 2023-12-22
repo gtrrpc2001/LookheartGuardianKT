@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- 버튼의 배경색 -->
+    <stroke
+        android:width="3dp"
+        android:color="@color/myRed" />
+    <corners
+        android:radius="10dp" /> <!-- 테두리의 굴곡 정도 -->
+</shape>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463914517554",
+    "project_id": "medsyslab-guardian",
+    "storage_bucket": "medsyslab-guardian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463914517554:android:aa4ad36d56c69b6003a82b",
+        "android_client_info": {
+          "package_name": "com.msl.ble_for_ecg_new_ble2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqZdwnm4rPl-TtX9bsewl_GNgA3Rc6ok8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
