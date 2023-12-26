@@ -2,6 +2,7 @@ package com.mcuhq.simplebluetooth2.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -10,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 import com.library.KTLibrary.fragment.ArrFragment
-import com.library.lookheartLibrary.fragment.SummaryFragment
+import com.library.KTLibrary.fragment.SummaryFragment
 import com.mcuhq.simplebluetooth2.R
 import com.mcuhq.simplebluetooth2.fragment.HomeFragment
 import com.mcuhq.simplebluetooth2.fragment.ProfileFragment
@@ -83,7 +84,8 @@ class Activity_Main : AppCompatActivity() {
 
                 R.id.bottom_arr -> {
                     if (arrF == null) {
-                        arrF = ArrFragment()
+                        val email = getSharedPreferences("User", MODE_PRIVATE).getString("email","")
+                        arrF = ArrFragment(email)
                         fragmentManager!!.beginTransaction().add(R.id.main_frame,
                             arrF as ArrFragment
                         ).commit()

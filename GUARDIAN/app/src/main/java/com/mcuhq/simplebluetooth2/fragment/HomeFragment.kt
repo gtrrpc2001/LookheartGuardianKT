@@ -360,12 +360,8 @@ class HomeFragment : Fragment() {
                 override fun getData(bpmData: List<Map<String, String>>?) {
                     val dataList = ArrayList<String>()
                     for (i in 1 until bpmData!!.size - 1) {
-                        val startDate =
-                            bpmData[i]["time"]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
-                                .toTypedArray()
-                        val nextDate = bpmData[i + 1]["time"]!!.split(" ".toRegex())
-                            .dropLastWhile { it.isEmpty() }
-                            .toTypedArray()
+                        val startDate = bpmData[i]["time"]!!.split(" ").toTypedArray()
+                        val nextDate = bpmData[i + 1]["time"]!!.split(" ").toTypedArray()
                         if (startDate[0] == nextDate[0]) {
                             dataList.add(bpmData[i].toString())
                         } else {
@@ -400,10 +396,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun writeBpmDataToFile(startDate: String, dataList: ArrayList<String>) {
-        val spStartDate =
-            startDate.split("-".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-        val directoryName =
-            "LOOKHEART/" + myEmail + "/" + spStartDate[0] + "/" + spStartDate[1] + "/" + spStartDate[2]
+        val spStartDate = startDate.split("-").toTypedArray()
+        val directoryName = "LOOKHEART/" + myEmail + "/" + spStartDate[0] + "/" + spStartDate[1] + "/" + spStartDate[2]
         val directory = File(safeGetActivity()!!.filesDir, directoryName)
         if (!directory.exists()) {
             directory.mkdirs()
@@ -413,15 +407,13 @@ class HomeFragment : Fragment() {
             FileOutputStream(file, false).use { fos ->
                 val csvBuilder = StringBuilder()
                 for (dataStr in dataList) {
-                    dataStr.substring(1, dataStr.length - 1).trim { it <= ' ' } // 중괄호, 공백 제거
-                    val data = dataStr.split(",".toRegex()).dropLastWhile { it.isEmpty() }
-                        .toTypedArray() // 쉼표 기준 분리
-
+                    val sybDataStr = dataStr.substring(1, dataStr.length - 1).trim { it <= ' ' } // 중괄호, 공백 제거
+                    val data = sybDataStr.split(",").toTypedArray() // 쉼표 기준 분리
+                    Log.e("data",Arrays.toString(data))
                     // 키, 값 저장
                     val map: MutableMap<String, String> = HashMap()
                     for (key in data) {
-                        val entry = key.split("=".toRegex()).dropLastWhile { it.isEmpty() }
-                            .toTypedArray()
+                        val entry = key.split("=").toTypedArray()
                         if (entry.size < 2) map[entry[0].trim { it <= ' ' }] =
                             "null" else map[entry[0].trim { it <= ' ' }] =
                             entry[1].trim { it <= ' ' }
@@ -1435,6 +1427,7 @@ class HomeFragment : Fragment() {
                                     ${time[1]},${data["utcOffset"]},${data["bpm"]},${data["temp"]},${data["hrv"]}
                                     
                                     """.trimIndent()
+                                    Log.e("data",csvData)
                                     //                                Log.e("csvData", csvData);
                                     doubleTEMP = data["temp"]!!.toDouble()
                                     fos.write(csvData.toByteArray())
